@@ -8,8 +8,8 @@ class Vehicle {
     this.mileage = mileage;
   }
 
-  // Method to update mileage when vehicle is used
-  updateMileage(distance) {
+  // Method to update mileage when vehicle is driven
+  drive(distance) {
     this.mileage = this.mileage + distance;
   }
 
@@ -42,9 +42,9 @@ console.log(van.displayInfo());
 console.log(suv.displayInfo());
 
 console.log('After Driving:');
-sedan.updateMileage(200);
-van.updateMileage(450);
-suv.updateMileage(125);
+sedan.drive(200);
+van.drive(450);
+suv.drive(125);
 
 console.log(sedan.displayInfo());
 console.log(van.displayInfo());
